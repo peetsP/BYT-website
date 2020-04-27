@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1199px)
+{
+	.main_nav
+	{
+		margin-left: 150px;
+	}
+}
+@media only screen and (min-width: 991px)
+{
+	.hamburger
+	{
+		display: none!important;
+	}
+}
+@media only screen and (max-width: 991px)
+{
+	.main_nav
+	{
+		display: none;
+	}
+	.hamburger
+	{
+		display: block;
+	}
+	.logo 
+	{
+		margin-left: 60px!important;
+	}
+}
+@media only screen and (max-width: 575px)
+{
+	.logo 
+	{
+		margin-left: 30px!important;
+	}
+	.menu_content ul li a
+	{
+		font-size: 24px;
+	}
+	.home
+	{
+		height: 100vh;
+	}
+}
+/*
+@media screen and (max-width: 1070px)
+{
+	.header {
+		width:100%;
+	}
+}
+
+@media screen and (min-width: 1070px)
+{
+	.header {
+		width:99%;
+	}
+}
+
+@media screen and (min-width: 1075px)
+{
+	.header {
+		width:95%;
+	}
+}
+*/
+
+
+
+
+@media screen and (min-width: 768px)
+{
+
+    .ournumb2 {
+        display: none;
+    }
+    .copyright {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .ournumb {
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    body{
+    
+    margin: auto;
+    }
+
+    nav {
+        
+    margin-top: 0px;
+    }
+    
+    .nav-links
+    {
+        position: absolute; 
+        right: 0px;  
+        height: 92vh;
+        top: 0vh;
+        background-color: rgb(33, 19, 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li
+    {
+        opacity: 0;
+        padding-top: 15px!important;
+    }
+    .burger{
+        display: block;
+    }
+    .sectionaside {
+        width: 97%;
+        margin: auto;
+    }
+
+    .ul-color .py-1 {
+        margin-left: 20px;
+    }
+    .cardright {
+        width: 300px;
+    }
+    .cardleft {
+        width: 130px;
+    }
+    .ournumb {
+        display: none;
+    }
+    .ournumb2 {
+        width: 45%;
+        float: left;
+        margin: auto;
+        display: block;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .copyright {
+        float: right;
+        width: 55%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .sectionaside {
+        width: 97%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1000px)
+{
+    .teamnext {
+        margin-right: 50px !important;
+    }
+    .teamprev {
+        margin-left: 50px!important;
+    }
+}
+@media screen and (max-width: 850px)
+{
+    .teamnext {
+        margin-right: 50px !important;
+    }
+    .teamprev {
+        margin-left: 50px!important;
+    }
+}
+
+
+@media screen and (max-width: 702px)
+{
+    .teamnext, .teamprev {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 992px)
+{
+    .nav-links{
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .burger{
+        padding-right: 36px;
+    }
+
+    body{
+        width: 1050px;
+        margin: auto;
+        margin-top: 10px;
+    }  
+}
+
+
+@media screen and (min-width: 768px)
+{
+    .nav-links{
+        width: 45%;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 576px)
+{
+    .carou .carousel-inner img
+    {
+        height: 300px!important;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 576px)
+{
+    .carou .carousel-inner img
+    {
+        height: 400px!important;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 656px)
+{
+    .carou .carousel-inner img
+    {
+        height: 380px!important;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 730px)
+{ 
+.carou .carousel-inner img {
+    height: 386px!important;
+    width: auto;
+}
+}
+
+@media screen and (min-width: 768px)
+{ 
+.carou .carousel-inner img {
+    height: 450px!important;
+    width: auto;
+}
+}
+
+@media screen and (min-width: 868px)
+{ 
+.carou .carousel-inner img {
+    height: 470px!important;
+    width: auto;
+}
+}
+
+@media screen and (min-width: 992px)
+{ 
+.carou .carousel-inner img {
+    height: 520px!important;
+    width: auto;
+}
+}
+
+@media screen and (min-width: 1052px)
+{ 
+.carou .carousel-inner img {
+    height: 525px!important;
+    width: auto;
+}
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .carou .carousel-inner img{
+        height: 530px!important;
+        width: auto;
+    }
+}
+
+
