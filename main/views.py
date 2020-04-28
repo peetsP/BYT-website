@@ -43,6 +43,5 @@ def index(request):
             headers={'Reply to' : email})
         
         email.send()
-
-
+        
     return render(request, 'index.html', context=context)
