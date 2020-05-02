@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -150,6 +151,6 @@ django_heroku.settings(locals())
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ethicalyouths.settings")
 
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+APPLICATION = get_wsgi_application()
+APPLICATION = DjangoWhiteNoise(APPLICATION)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
