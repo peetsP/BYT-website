@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
-from whitenoise.django import DjangoWhiteNoise
 from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -148,7 +148,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bootcamp.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ethicalyouths.settings")
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
