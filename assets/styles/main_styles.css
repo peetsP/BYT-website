@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+body {
+    background-color: none!important;
+}
 .navbar-nav li a:hover{
     color: white!important;
 }
@@ -27,10 +29,8 @@
     grid-template-areas: "image" "text" "stats";
     font-family: roboto;
     border-radius: 18px;
-
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-
     transition: 0.5s ease;
     cursor: pointer;
 }
@@ -42,22 +42,7 @@
     border-top-right-radius: 15px;
     background-size: cover;
 }
-/*
-.services-image2 {
-    grid-area: image;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 
-    background-size: cover;
-}
-
-.services-image3 {
-    grid-area: image;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}
-*/
 .services-text {
     grid-area: text;
     margin: 25px;
@@ -219,12 +204,9 @@ letter-spacing: 1px;
 .team {
     overflow: hidden;
 }
-.contactus {
-    /*background-color: white;*/
-}
 
 .contacts {
-    flex-direction: column;
+    flex-direction: row!important;
 }
 
 .contacts li {
@@ -255,6 +237,38 @@ letter-spacing: 1px;
     cursor: pointer;
 }
 
+
+/*Search */
+.email-submit {
+    margin: auto;
+}
+
+.email-submit:hover {
+    box-shadow: 5px 5px 6px 4px rgba(0, 0, 0, 0.9)!important;
+    text-align: center;
+    transition: 0.5s ease!important;
+    cursor: pointer;
+}
+
+input[type=name], input[type=email]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box!important;
+  }
+  input[type=name]:hover, input[type=email]:hover{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box!important;
+    box-shadow: 1px 1px 1px 1px rgba(88, 86, 86, 0.9)!important;
+    transition: 0.6s ease!important;
+  }
+  input[type=name]:focus, input[type=email]:focus{
+    border: 3px solid rgb(226, 237, 238)!important;
+    box-shadow: 1px 1px 1px 1px rgba(88, 86, 86, 0.9)!important;
+    border: none!important;
+  }
+
 .footersxn {
     background: rgba(0, 0, 0, 0.7);
 }
+

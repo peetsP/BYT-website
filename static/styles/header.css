@@ -239,7 +239,6 @@ a, a:hover, a:visited, a:active, a:link
 }
 .menu_content ul li a
 {
-	font-size: 48px;
 	font-weight: 500;
 	color: #181818;
 	-webkit-transition: all 200ms ease;
@@ -248,6 +247,7 @@ a, a:hover, a:visited, a:active, a:link
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+
 .menu_content ul li a:hover
 {
 	color: rgba(0,0,0,0.5);

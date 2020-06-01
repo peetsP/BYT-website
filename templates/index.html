@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +20,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
-                            <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-                                <div class="logo ml-4 mb-1"><a href="index.html">BYT.com</a></div>
+                        <div class="header_content d-flex">
+                            <div class="header_content_inner my-auto pt-1 d-flex flex-row align-items-start justify-content-start">
+                                <div class="logo ml-4 mb-1"><a href="index.html" class="menu_logo_a">BYT.com</a></div>
                                 
                                 <nav class="main_nav navbar-dark">  
                                         <ul class="navbar-nav d-flex flex-row align-items-start justify-content-start">
@@ -61,10 +60,10 @@
             </div>
             <div class="menu_content">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#aboutus">About us</a></li>
-                    <li><a href="#contactus">Contact</a></li>
+                    <li><a href="#home" class="hamburgernav">Home</a></li>
+                    <li><a href="#services" class="hamburgernav">Services</a></li>
+                    <li><a href="#aboutus" class="hamburgernav">About us</a></li>
+                    <li><a href="#contactus" class="hamburgernav">Contact</a></li>
                 </ul>
             </div>
             <div class="menu_social">
@@ -105,7 +104,7 @@
                 {% endif %}
                     <img class="topcarousel d-block w-100 h-30" src="{{carousel.carousel_img.url}}">
                     <div class="carousel-caption">
-                    <h3 class="mb-3">{{carousel.carousel_desc}}</h3>
+                    <h3 class="mb-3 carousel-desc">{{carousel.carousel_desc}}</h3>
                     </div>
                     </div>
                 {% endfor %}
@@ -127,12 +126,12 @@
     <section class="bg-light" id="services">
         <div class="container-fluid maincard">
         <div class="container-fluid">
-            <div class="row p-4">
-                <div class="col">
+            <div class="row py-3">
+                <div class="col-sm-6 col-lg-6 col-md-6">
                     <h4 class="display-5 text-dark font-weight-bold">OUR SERVICES</h4>
                 </div>
-                <div class="col d-flex justify-content-end align-item-center">
-                <a href="#setmeeting" class="btn btn-outline-dark  p-2 pr-3 pl-3 lead mr-3">Set Meeting</a>
+                <div class="col-sm-6 col-lg-6 col-md-6 setmeetup">
+                <a href="#setmeeting" class="btn btn-outline-dark p-2 pr-3 pl-3 lead">Set Meeting</a>
                 </div>
                 </div>
             </div>
@@ -144,20 +143,20 @@
                 grid-area: image; border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
 
                 <div class="services-text">
-                    <h3>{{service.service_name}}</h3>
+                    <h4 class="service_name">{{service.service_name}}</h4>
 
                     <p>{{service.service_description}}</p>
                 </div>
-                    <div class="stat">
-                        <button type="button" id="refresh" class="pl-5 pr-5 pt-2 pb-2 refreshbtn bg-dark btn btn-outline-light">Hire Us</button>
-                    </div>
+                <div class="stat">
+                    <button type="button" id="refresh" class="pl-5 pr-5 pt-2 pb-2 refreshbtn bg-dark btn btn-outline-light">Hire Us</button>
+                </div>
             </div>
             {% endfor %}
 
             </div>
             
         <div class="otherservices row justify-content-center ml-4 mt-4 align-item-center">
-                <a href="#" class="btn btn-outline-dark btn-raised  p-2 pr-3 pl-3 lead mr-5 mb-4">Other Services</a>
+                <a href="#" class="btn btn-outline-dark btn-raised  p-2 pr-3 pl-3 lead mr-5 mb-4">Set Meeting</a>
                 </div>
         </div>
     
@@ -167,17 +166,18 @@
             
             <div class="container-fluid">
                 <div class="row p-4">
-                    <div class="col">
+                    <div class="col-sm-6 col-lg-6 col-md-6">
                         <h4 class="display-5 text-dark font-weight-bold">ABOUT US</h4>
                     </div>
-                    <div class="col d-flex justify-content-end align-item-center">
+                    <div class="col-sm-6 col-lg-6 col-md-6 d-flex justify-content-end align-item-center">
                     <a href="#ourTeam" class="ourTeam btn btn-outline-dark  p-2 pr-3 pl-3 lead mr-3">OUR TEAM</a>
                     </div>
                     </div>
-                    <div class="row mx-auto">
-                    <p class="text-dark mb-1 mx-auto col-xl-11 col-lg-11 col-md-12 col-sm-12">
+                    <div class="row mx-auto desc">
+                    <p class="text-dark mb-1 desc1 mx-auto col-xl-11 col-lg-11 col-md-12 col-sm-12">
                         <strong>Brilliant Youth Technologies</strong> company is a youths' company in Kenya with technological skills which 
-                        enables youths who are still in school to use their skills to work for our nation.</p>
+                        enables youths who are still in school to use their skills to work for our nation.
+                    </p>
                     
                     <ul class="ul-color col-xl-8 col-lg-8 col-md-11 col-sm-11 mb-3 mx-auto">
                         <li class="py-1"><a href="#" class="color1 active"></a>Youths are smart, energetic and creative with potential in technological innovations.</li>
@@ -191,7 +191,7 @@
                         <aside class="container pt-4 pb-3 mb-2">
                             <div class="row text-light mb-3">
                                 <h3 class="col-lg-2 col-xl-2 col-md-2 col-sm-12 aside d-flex align-items-start justify-content-around mt-1">Mision</h3>
-                                <p class="col-lg-10 col-xl-10 col-md-10 col-sm-12">
+                                <p class="mision col-lg-10 col-xl-10 col-md-10 col-sm-12">
                                     
                                     To provide university and college students with a platform to use their technological skills to work for local and 
                                     international clients as they gain more experience for their portfolio.
@@ -200,7 +200,7 @@
                             </div>
                             <div class="row text-light mb-3">
                                 <h3 class="col-lg-2 col-xl-2 col-md-2 col-sm-12 aside d-flex align-items-start justify-content-around mt-1">Vision</h3>
-                                <p class="col-lg-10 col-xl-10 col-md-10 col-sm-12">
+                                <p class="vision col-lg-10 col-xl-10 col-md-10 col-sm-12">
                                    
                                     To be a internationally recognised platform working for both local and international projects 
                                     engaging the youths giving them exposure and recognition.
@@ -214,7 +214,7 @@
                     <div class="team container-fluid">
                     <div class="row p-4">
                         <div class="col">
-                            <h4 class="text-dark text-center mt-2 font-weight-bold" id="ourTeam">MEET OUR TEAM</h4>
+                            <h4 class="text-dark meetourteam text-center mt-2 font-weight-bold" id="ourTeam">MEET OUR TEAM</h4>
                             <div class="title-underline bg-dark"></div>
                         </div>
                         </div>
@@ -231,8 +231,8 @@
                             {% endif %}
                                 <div class="row justify-content-center align-item-center teamcards">
                                     <div class="cardleft bg-dark text-center">
-                                    <p class="cardh text-uppercase bg-light text-dark text-white font-weight-bold mx-4 mt-3 mb-3">{{team.rank}}</p>
-                                        <img class="teampics mb-3" src="{{team.img.url}}" alt="Meet James">
+                                    <p class="cardh text-uppercase bg-light text-dark text-white font-weight-bold mx-3 mt-3 mb-3">{{team.rank}}</p>
+                                        <img class="teampics mb-3" src="{{team.img.url}}" alt="Meet our team">
                                     <div class="cardbtn">
                                         <a href="#" class="btn btn-light">Contact</a>
                                     </div>
@@ -244,6 +244,18 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="row media border p-2">
+                                    <div class="imagediv col-sm-12 mt-1 mb-1 d-flex flex-row align-items-start justify-content-center">
+                                    <img src="{{team.img.url}}" alt="Meet our team" class="teamImages rounded-circle" style="width:100px;">
+                                    </div>
+                                    <div class="cardtext col-sm-12">
+                                    <h4>{{team.name}} <small><i>{{team.rank}}</i></small></h4>
+                                    <p>{{team.personality}}</p>  
+                                    <a href="#" class="btn btn-outline-dark btn-raised  p-1 pr-3 pl-3 lead mt-2 mr-5">Contact</a>    
+                                    </div>
+                                </div>
+
                             </div>
                             {% endfor %}
                             </div>
@@ -272,7 +284,7 @@
                             <h5 id="setmeeting" class="col-12 text-center text-dark font-weight-bold mt-4">CONTACT US</h5>
                             <div class="contactus col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                 <div class="row">
-                                <div class="socialmedia col-3">
+                                <div class="socialmedia col-sm-3 col-md-3 col-lg-3">
                                 <ul class="mt-5 contacts">
                                     <li class="text-center">
                                         <i class="py-1 mt-1 mb-1 fab fa-facebook-square fa-3x"></i>
@@ -288,7 +300,7 @@
                                     </li>
                                 </ul>
                                 </div>
-                                <div class="contactforms col-8 mt-4">
+                                <div class="contactforms  col-sm-9 col-md-9 col-lg-9 mt-4">
 
                                 <form class="mb-3" method="POST" action="{% url 'index' %}">
                                     {% csrf_token %}
@@ -307,7 +319,7 @@
                                         <textarea class="form-control" rows="4" id="comment" name="text" placeholder="Message"></textarea>
                                     </div>
 
-                                   <button type="submit" class="btn btn-dark">Send Email</button>
+                                   <button type="submit" class="email-submit btn btn-dark">Send Email</button>
                                 </form>
                                 </div>
                                 </div>
@@ -318,10 +330,10 @@
                             </div>
                         </div>
         </section>
-    <footer style="width: 100%;">
-        <div class="footersxn">
-            <div class="ournumb2 text-center text-white my-2 py-3 font-weight-bold" style="letter-spacing: 0.5px; ">Call us: +254707200601</div>
-            <div class="copyright text-center text-white my-2 py-3">© 2020 BYT. All Rights Reserved.</div>
+    <footer class="container-fluid mb-1" style="width: 100%;">
+        <div class="row footersxn">
+            <div class="col-sm-6 col-md-6 col-lg-6 ournumb2 text-center text-white my-2 py-2" style="letter-spacing: 0.8px;">Call us: +254707200601</div>
+            <div class="col-sm-6 col-md-6 col-lg-6 copyright text-center text-white my-2 py-2" style="letter-spacing: 0.8px;">© 2020 BYT | All Rights Reserved.</div>
         </div>
     </footer>
 
