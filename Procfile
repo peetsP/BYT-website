@@ -1,1 +1,1 @@
-web: gunicorn byt.wsgi
+web: gunicorn brilliant-youths.wsgi
