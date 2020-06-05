@@ -24,14 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'su8w3g^=1x4jnwdz(&9dmbtnx%5$b_wx5+2*&wsyu!kwpo05)+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
 
-INSTALLED_APPS = [ 
+INSTALLED_APPS = [
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -138,10 +138,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
+# Activate Django-Heroku.
 django_heroku.settings(locals())

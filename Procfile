@@ -1,1 +1,1 @@
-web:gunicorn brilliant-youths.wsgi
+web: gunicorn myservices.wsgi
